@@ -33,27 +33,27 @@ TRAVELLER_COUNT = 900
 HOLD_PARTICLE_COUNT = 2_400
 SEED = 314159
 LOGO_SUFFIXES = {".png", ".webp"}
-LOGO_ALIASES = {"kube": "kubernetes"}
-PREFERRED_LOGO_ORDER = ("linux", "kubernetes")
+LOGO_ALIASES = {}
+PREFERRED_LOGO_ORDER = ("linux",)
 
 YAML_ROWS = [
     (0, "profile", ""),
-    (1, "subject", "Maria Claudia"),
-    (1, "role", "DevOps Engineer"),
-    (1, "origin", "Rosario, Argentina"),
-    (1, "focus", "CI/CD · Cloud Native · IaC"),
-    (1, "status", "Automatizacion · Escalado · Despliegue"),
-    (1, "toolchain", "Terraform · Helm · GitHub Actions"),
+    (1, "subject", "Lorena Pensatori"),
+    (1, "role", "Junior QA Analyst"),
+    (1, "origin", "Montevideo, Uruguay"),
+    (1, "focus", "QA · Testing · Software Development"),
+    (1, "status", "Manual Testing · Bug Reporting · Validation"),
+    (1, "toolchain", "Java · JavaScript · PHP · SQL"),
     (0, "stack", ""),
-    (1, "cloud", "AWS · Azure"),
-    (1, "containers", "Kubernetes · Docker · Helm"),
-    (1, "iac", "Terraform · Ansible"),
-    (1, "observability", "Prometheus · Datadog · Sentry"),
-    (1, "automation", "Python · Bash · JavaScript"),
+    (1, "databases", "MySQL · MariaDB · SQL"),
+    (1, "testing", "Functional · Black-box · White-box · Test Design"),
+    (1, "backend", "PHP · REST APIs · MVC"),
+    (1, "automation", "Bash · Git · GitHub"),
+    (1, "environment", "Linux · VS Code"),
     (0, "contact", ""),
-    (1, "linkedin", "/in/mcperezes"),
-    (1, "github", "macu-dev"),
-    (1, "timezone", "UTC-3 · Rosario"),
+    (1, "linkedin", "/in/lorena-pensatori-882a55400"),
+    (1, "github", "LorenaPensatori"),
+    (1, "email", "lorena.pensatori.it@gmail.com"),
 ]
 
 THEMES = {
@@ -150,7 +150,6 @@ def make_logos() -> dict[str, Image.Image]:
     if not logos:
         raise SystemExit(f"No PNG or WebP icons found in {LOGOS.relative_to(ROOT)}")
     ordered_names = [name for name in PREFERRED_LOGO_ORDER if name in logos]
-    ordered_names.extend(name for name in sorted(logos) if name not in ordered_names)
     return {name: logos[name] for name in ordered_names}
 
 
@@ -338,9 +337,9 @@ def render_svg(
         '<svg xmlns="http://www.w3.org/2000/svg" '
         f'width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" '
         'aria-labelledby="title desc">',
-        "<title id=\"title\">Maria Claudia's live system profile</title>",
+        "<title id=\"title\">Lorena Pensatori's live system profile</title>",
         '<desc id="desc">Animated terminal profile with a dithered portrait and '
-        "DevOps tool silhouettes.</desc>",
+        "QA and software-development tool silhouettes.</desc>",
         "<defs>",
         '<filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">'
         f'<feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="{t["shadow"]}" '
@@ -473,7 +472,7 @@ def render_svg(
             f'stroke="{t["chrome"]}"/>',
             f'<text x="1062" y="111" text-anchor="middle" fill="{t["chrome"]}" '
             'font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" '
-            'font-weight="700">@macu-dev</text>',
+            'font-weight="700">@LorenaPensatori</text>',
         ]
     )
 

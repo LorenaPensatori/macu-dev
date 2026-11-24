@@ -1,26 +1,30 @@
 {
-  "title": "DevOps Language Stack",
-  "_comment": "Values 0-100. Edit these and the Charts workflow redraws it.",
+  "title": "QA & Software Language Stack",
+  "_comment": "Values 0-100. Edit these as your skills grow.",
   "axes": [
     {
-      "label": "Python",
-      "value": 88
+      "label": "Java",
+      "value": 65
+    },
+    {
+      "label": "JavaScript",
+      "value": 60
+    },
+    {
+      "label": "PHP",
+      "value": 70
+    },
+    {
+      "label": "SQL",
+      "value": 75
+    },
+    {
+      "label": "MySQL / MariaDB",
+      "value": 75
     },
     {
       "label": "Bash/Shell",
-      "value": 85
-    },
-    {
-      "label": "Javascript",
-      "value": 90
-    },
-    {
-      "label": "HCL",
-      "value": 80
-    },
-    {
-      "label": "YAML",
-      "value": 90
+      "value": 45
     }
   ]
 }

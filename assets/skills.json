@@ -1,30 +1,55 @@
 {
-  "title": "DevOps Skill Radar",
-  "_comment": "Self-rated, 0-100. Edit these and the Charts workflow redraws the radar.",
+  "title": "Junior QA & Software Skills",
+  "_comment": "Self-rated, 0-100. Update as skills grow.",
   "axes": [
     {
-      "label": "CI/CD & Pipelines",
-      "value": 90
+      "label": "Manual Testing",
+      "value": 75
     },
     {
-      "label": "Cloud (AWS/Azure)",
-      "value": 85
+      "label": "Test Case Design",
+      "value": 70
     },
     {
-      "label": "Kubernetes & Docker",
-      "value": 88
-    },
-    {
-      "label": "IaC (Terraform)",
-      "value": 85
-    },
-    {
-      "label": "Observability",
+      "label": "Bug Reporting",
       "value": 80
     },
     {
-      "label": "SRE & Reliability",
+      "label": "API Testing / Postman",
+      "value": 55
+    },
+    {
+      "label": "Java",
+      "value": 65
+    },
+    {
+      "label": "PHP",
+      "value": 70
+    },
+    {
+      "label": "SQL / MySQL",
       "value": 75
+    },
+    {
+      "label": "Git / GitHub",
+      "value": 75
+    },
+    {
+      "label": "Linux / Bash",
+      "value": 65
+    },
+    {
+      "label": "HTML5",
+      "value": 60
+    },
+    {
+      "label": "CSS3",
+      "value": 55
+    },
+    {
+      "label": "JavaScript",
+      "value": 60
     }
   ]
 }
+
